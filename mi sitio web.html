@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web</title>
+    <style>
+        body{
+            font-family: Arial , sans-serif;
+            background-color: #f0f0f5;
+            margin:0;
+            padding: 20px;
+        }
+        .container{
+            max-width: 800px;
+            background-color: #fff;
+            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            text-align: center;
+            color: #333;
+        }
+        .perfil{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .foto{
+            width: 150px;
+            height: 150px;
+            background-color: #ddd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: bold;
+        }
+        .mi-foto{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+        .descrpipcion{
+            width: 60%;
+            min-height: 120x;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        h2{
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            color:#007bff       
+        }
+        ul{
+            list-style: none;
+            padding-left: 10px;
+        }
+        li{
+            margin: 5px 0;
+        }
+        a{
+            text-decoration: none;
+            color:#333;
+            transition: color 0.3s;
+        }
+        a:hover{
+            color: #007bff ;
+       }
+       .categoria{
+        margin-top: 15px;
+        font-weight: bold;
+       }
+       button{
+        margin-top: 15px;
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer; 
+        }
+        button:hover{
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jhonatan Julio Cesar Amanqui Durand</h1>
+        <div class="perfil">
+            <div class="foto">
+                <img src="imagen.png" alt="Mi foto" class="mi-foto">
+            </div>
+            <div class="descripción">
+                <p><strong>Descripcion:</strong><br>Soy estudiante de Ingieria de Sistemas de la Universidad Una Puno y en esta pagina web presento algunos de mis trabajos y ejercicios realizados en HTML,CSS,JavaScript. Cada enlace muestra los trabajos echos en clase asi como trabajos que reflejan mi aprendizaje y progreso en programación </p>
+            </div>
+        </div>
+    <section>
+        <h2>Trabajos</h2>
+        <ul>
+            <li><a href="https://jhonaam554.github.io/Mi-web/tarear" target="_blank">Trabajo: Tarea</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/pc" target="_blank">Trabajo: PC</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/Calculadora" target="_blank">Trabajo: Calculadora</a></li>
+        </ul>
+    </section>
+    <section>
+        <h2>Ejercicios</h2>
+        <div class="categoria">CSS</div>
+        <ul>
+            <li><a href="https://jhonaam554.github.io/Mi-web/prac03" target="_blank">Ejercicio 1</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/prac04" target="_blank">Ejercicio 2</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/flex1" target="_blank">Ejercicio 3</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/flex2" target="_blank">Ejercicio 4</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/flex3" target="_blank">Ejercicio 5</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/flex4" target="_blank">Ejercicio 6</a></li>
+        </ul>
+        <div class="categoria">HTML</div>
+        <ul>
+            <li><a href="https://jhonaam554.github.io/Mi-web/web1" target="_blank">Ejercicio 1</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/web2" target="_blank">Ejercicio 2</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/prac01" target="_blank">Ejercicio 3</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/prac02" target="_blank">Ejercicio 4</a></li>
+        </ul>
+        <div class="categoria">JavaScript</div>
+        <ul>
+            <li><a href="https://jhonaam554.github.io/Mi-web/pracjs01" target="_blank">Ejercicio 1</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/pracjs02" target="_blank">Ejercicio 2</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/pracjs03" target="_blank">Ejercicio 3</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/pracjs04" target="_blank">Ejercicio 4</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/pracjs05" target="_blank">Ejercicio 5</a></li>
+            <li><a href="https://jhonaam554.github.io/Mi-web/pracjs06" target="_blank">Ejercicio 6</a></li>
+        </ul>
+    </section>
+    <button onclick="saludo()">Haz clic aqui</button>
+    </div>
+    <script>
+        function saludo(){
+            alert("Bienvenido a mi pagina wec");
+        }
+    </script>
+</body>
+</html>
